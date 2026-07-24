@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование | Фобаобау - Вьетнамский ресторан</title>
+    <meta name="description" content="Забронируйте столик в ресторане Фобаобау. Онлайн-бронь, звонок, мероприятие.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/booking.css">
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            ФОБАО<span>БАУ</span>
+        </a>
+        
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="menu.html" class="nav-link">Меню</a></li>
+                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="gallery.html" class="nav-link">Галерея</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+        
+        <button class="burger" id="burger" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Бронирование столика</h1>
+        <p>Забронируйте столик онлайн или позвоните нам</p>
+    </div>
+</section>
+
+<!-- Booking Form -->
+<section class="booking-section section">
+    <div class="container">
+        <div class="booking-grid">
+            <div class="booking-form-container fade-in">
+                <h2>Онлайн-бронь</h2>
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+7 (917) 123-45-67">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="ivan@example.com">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Дата *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Время *</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">Количество гостей *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Выберите...</option>
+                                <option value="1">1 гость</option>
+                                <option value="2">2 гостя</option>
+                                <option value="3">3 гостя</option>
+                                <option value="4">4 гостя</option>
+                                <option value="5">5 гостей</option>
+                                <option value="6">6 гостей</option>
+                                <option value="more">Более 6</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="occasion">Повод</label>
+                            <select id="occasion" name="occasion">
+                                <option value="">Не выбран</option>
+                                <option value="birthday">День рождения</option>
+                                <option value="date">Свидание</option>
+                                <option value="business">Деловая встреча</option>
+                                <option value="family">Семейный ужин</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferences">Особые пожелания</label>
+                        <textarea id="preferences" name="preferences" rows="4" placeholder="Укажите особые пожелания: нужен ли детский стульчик, есть ли аллергия на продукты и т.д."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Забронировать столик</button>
+                    
+                    <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+                </form>
+                
+                <div class="form-success" id="formSuccess" style="display: none;">
+                    <div class="success-icon">✅</div>
+                    <h3>Спасибо за бронирование!</h3>
+                    <p>Мы свяжемся с вами в ближайшее время для подтверждения.</p>
+                </div>
+            </div>
+            
+            <div class="booking-info fade-in">
+                <div class="info-card">
+                    <h3>📞 Быстрое бронирование</h3>
+                    <p>Позвоните нам для мгновенного бронирования:</p>
+                    <a href="tel:+79171234567" class="phone-link">+7 (917) 123-45-67</a>
+                    <p class="info-note">Ежедневно с 10:00 до 22:00</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🕐 Часы работы</h3>
+                    <ul class="schedule">
+                        <li><span>Пн-Пт:</span> 11:00 – 23:00</li>
+                        <li><span>Сб-Вс:</span> 12:00 – 00:00</li>
+                        <li><span>Кухня:</span> до 22:00 (23:00 в выходные)</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🎉 Мероприятия</h3>
+                    <p>Планируете банкет или день рождения? Напишите нам на почту:</p>
+                    <a href="mailto:events@fobaobau.ru" class="email-link">events@fobaobau.ru</a>
+                    <p class="info-note">Мы поможем организовать ваше событие!</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>📍 Адрес</h3>
+                    <p>ул. Ленина, 45, Альметьевск</p>
+                    <div class="mini-map">
+                        <iframe 
+                            src="https://yandex.ru/map-widget/v1/?ll=52.3154%2C54.9014&z=16&pt=52.3154,54.9014,pm2rdl&text=ул.%20Ленина,%2045,%20Альметьевск"
+                            width="100%" 
+                            height="200" 
+                            frameborder="0"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>ФОБАОБАУ</h3>
+                <p>Вьетнамский ресторан в Альметьевске. Традиционная кухня, свежие продукты, уютная атмосфера.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Меню</h4>
+                <ul>
+                    <li><a href="menu.html">Все блюда</a></li>
+                    <li><a href="menu.html#soups">Супы</a></li>
+                    <li><a href="menu.html#appetizers">Закуски</a></li>
+                    <li><a href="menu.html#hot">Горячее</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Информация</h4>
+                <ul>
+                    <li><a href="about.html">О ресторане</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="booking.html">Бронь столика</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>📍 ул. Ленина, 45, Альметьевск</p>
+                <p>📞 +7 (917) 123-45-67</p>
+                <p>✉️ info@fobaobau.ru</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="ВКонтакте">ВКонтакте</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Фобаобау. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Наверх">↑</button>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/booking.js"></script>
+</body>
+</html>

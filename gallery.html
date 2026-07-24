@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея | Фобаобау - Вьетнамский ресторан</title>
+    <meta name="description" content="Фотогалерея ресторана Фобаобау. Интерьер, блюда, атмосфера.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            ФОБАО<span>БАУ</span>
+        </a>
+        
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="menu.html" class="nav-link">Меню</a></li>
+                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="gallery.html" class="nav-link active">Галерея</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary mobile-btn">Забронировать</a>
+        </nav>
+        
+        <a href="booking.html" class="btn btn-primary desktop-btn">Забронировать</a>
+        
+        <button class="burger" id="burger" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Галерея</h1>
+        <p>Загляните в атмосферу нашего ресторана</p>
+    </div>
+</section>
+
+<!-- Gallery Grid -->
+<section class="gallery-full section">
+    <div class="container">
+        <div class="gallery-tabs">
+            <button class="gallery-tab active" data-filter="all">Все</button>
+            <button class="gallery-tab" data-filter="interior">Интерьер</button>
+            <button class="gallery-tab" data-filter="dishes">Блюда</button>
+            <button class="gallery-tab" data-filter="atmosphere">Атмосфера</button>
+        </div>
+        
+        <div class="gallery-full-grid">
+            <div class="gallery-full-item fade-in" data-category="interior">
+                <img src="assets/img/gallery/interior-1.jpg" alt="Основной зал">
+            </div>
+            <div class="gallery-full-item fade-in" data-category="interior">
+                <img src="assets/img/gallery/interior-2.jpg" alt="VIP-зона">
+            </div>
+            <div class="gallery-full-item fade-in" data-category="dishes">
+                <img src="assets/img/gallery/dish-1.jpg" alt="Подача блюд">
+            </div>
+            <div class="gallery-full-item fade-in" data-category="atmosphere">
+                <img src="assets/img/gallery/atmosphere-1.jpg" alt="Вечерняя атмосфера">
+            </div>
+            <div class="gallery-full-item fade-in" data-category="dishes">
+                <img src="assets/img/gallery/dish-2.jpg" alt="Приготовление">
+            </div>
+            <div class="gallery-full-item fade-in" data-category="interior">
+                <img src="assets/img/gallery/interior-3.jpg" alt="Детали интерьера">
+            </div>
+            <div class="gallery-full-item fade-in" data-category="atmosphere">
+                <img src="assets/img/gallery/atmosphere-2.jpg" alt="Гости ресторана">
+            </div>
+            <div class="gallery-full-item fade-in" data-category="dishes">
+                <img src="assets/img/gallery/dish-3.jpg" alt="Сервировка">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img src="" alt="" id="lightboxImage">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>ФОБАОБАУ</h3>
+                <p>Вьетнамский ресторан в Альметьевске. Традиционная кухня, свежие продукты, уютная атмосфера.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Меню</h4>
+                <ul>
+                    <li><a href="menu.html">Все блюда</a></li>
+                    <li><a href="menu.html#soups">Супы</a></li>
+                    <li><a href="menu.html#appetizers">Закуски</a></li>
+                    <li><a href="menu.html#hot">Горячее</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Информация</h4>
+                <ul>
+                    <li><a href="about.html">О ресторане</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="booking.html">Бронь столика</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>📍 ул. Ленина, 45, Альметьевск</p>
+                <p>📞 +7 (917) 123-45-67</p>
+                <p>✉️ info@fobaobau.ru</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="ВКонтакте">ВКонтакте</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Фобаобау. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Наверх">↑</button>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>
